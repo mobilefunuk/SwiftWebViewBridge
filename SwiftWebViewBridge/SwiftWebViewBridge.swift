@@ -352,7 +352,7 @@ extension SwiftWebViewBridge: UIWebViewDelegate {
     public func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
         
         if let oriDelegate = self.oriDelegate as? UIWebViewDelegate {
-            oriDelegate.webView?(webView, didFailLoadWithError: error)
+            oriDelegate.webView?(webView, didFailLoadWithError: error!)
         }
     }
     
